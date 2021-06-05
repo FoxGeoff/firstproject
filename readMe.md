@@ -17,7 +17,12 @@ git repository:
 keywords:
 ```
 
+<<<<<<< HEAD
+
 1. Run ```npm install express```
 2. Run ```npm i mongodb```
 
 ### Task: Create file .gitignore
+
+=======
+>>>>>>> parent of 443631d (Install packages: express, mongodb)
