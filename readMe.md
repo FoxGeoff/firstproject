@@ -59,3 +59,13 @@ console.log('END');
 Add to the file: ```fs.appendFile();```
 
 Rename the file: ```fs.rename('sample.txt' newSample.txt' )```
+
+### Read a file (asyc)
+
+```javascript
+fs.readFile('myfile.txt', (err, 'utf8', data) => {
+    ir (err) throw err;
+    console.log(data);
+});
+
+```
