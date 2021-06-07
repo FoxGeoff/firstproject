@@ -21,3 +21,5 @@ keywords:
 2. Run ```npm i mongodb --save```
 
 ### Task: Create file .gitignore
+
+### Note there is a package 'os' to interigate you computer os
