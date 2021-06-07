@@ -23,3 +23,33 @@ keywords:
 ### Task: Create file .gitignore
 
 ### Note there is a package 'os' to interigate you computer os
+
+### Arrow functions
+
+```javascript
+fs = require(`fs`);
+fs.writeFile('sample.txt', 'this is just some text');
+
+function handlerFileCreation(err) {
+    if(err) throw err;
+    console.log('created file');
+}
+
+// method #2
+
+fs = require(`fs`);
+fs.writeFile('sample.txt', handlerFileCreation(err) );
+
+// method #3
+fs.writeFile('sample.txt', function(err) {
+    if(err) throw err;
+    console.log('created file');
+});
+console.log('END');
+
+// method #4
+fs.writeFile('sample.txt', (err) => {
+    if(err) throw err;
+    console.log('created file');
+});
+console.log('END');
