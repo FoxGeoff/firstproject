@@ -53,3 +53,9 @@ fs.writeFile('sample.txt', (err) => {
     console.log('created file');
 });
 console.log('END');
+
+```
+
+Add to the file: ```fs.appendFile();```
+
+Rename the file: ```fs.rename('sample.txt' newSample.txt' )```
