@@ -87,6 +87,6 @@ fs.unlink('myFile.txt', (err) => {
 
 ### How to use Express
 
-![Express uses #1](ExpressUses1.jpg
+![Express uses #1](ExpressUses1.jpg)
 
-![Express uses #2](ExpressUses2.jpg
+![Express uses #2](ExpressUses2.jpg)
