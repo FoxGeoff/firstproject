@@ -38,7 +38,7 @@ function handlerFileCreation(err) {
 // method #2
 
 fs = require(`fs`);
-fs.writeFile('sample.txt', handlerFileCreation(err) );
+fs.writeFile('sample.txt', 'some text', handlerFileCreation(err) );
 
 // method #3
 fs.writeFile('sample.txt', function(err) {
@@ -48,7 +48,7 @@ fs.writeFile('sample.txt', function(err) {
 console.log('END');
 
 // method #4
-fs.writeFile('sample.txt', (err) => {
+fs.writeFile('sample.txt', 'over write with this text', (err) => {
     if(err) throw err;
     console.log('created file');
 });
@@ -68,4 +68,15 @@ fs.readFile('myfile.txt', (err, 'utf8', data) => {
     console.log(data);
 });
 
+```
+
+### Delete a file
+
+```javascript
+// this will delete the file
+fs.unlink('myFile.txt', (err) => {
+    if(err) throw err;
+    console.log('file deleted!');
+});
+ 
 ```
