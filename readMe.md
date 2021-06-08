@@ -73,6 +73,7 @@ fs.readFile('myfile.txt', (err, 'utf8', data) => {
 ### Notes: Express commands
 
 ![Express commmands](ExpressCommands.jpg)
+
 ### Delete a file
 
 ```javascript
@@ -83,3 +84,5 @@ fs.unlink('myFile.txt', (err) => {
 });
  
 ```
+
+![Express uses #1](ExpressUses1.jpg)
